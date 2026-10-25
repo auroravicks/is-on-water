@@ -172,3 +172,9 @@ upstream release.
 ## Related project
 
 Prefer Go? See [auroravicks/is-it-water-go](https://github.com/auroravicks/is-it-water-go).
+
+## License
+
+Licensed under the [ISC License](LICENSE), matching the license declared by the
+original Is On Water project. ASTWBD dataset files are governed separately; see
+the dataset repository's [data notice](https://github.com/auroravicks/is-on-water-dataset/blob/main/DATA-NOTICE.md).
