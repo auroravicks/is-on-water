@@ -1,8 +1,11 @@
-from fastapi import FastAPI
-from water import is_in_water
 import time
 
+from fastapi import FastAPI
+
+from water import is_in_water
+
 app = FastAPI()
+
 
 @app.get("/is-it-water/{lat}/{lon}")
 async def get_feature(lat: float, lon: float):
@@ -14,5 +17,5 @@ async def get_feature(lat: float, lon: float):
         "feature": feature,
         "lat": lat,
         "lon": lon,
-        "reqMs": round((time.time() - start_time) * 1000)
+        "reqMs": round((time.time() - start_time) * 1000),
     }
